@@ -1,0 +1,19 @@
+{
+  "name": "nasa",
+  "version": "1.0.0",
+  "description": "NASA Project",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "npm run watch --prefix server",
+    "watch": "npm run server & npm run client",
+    "deploy": "npm run build --prefix client && npm run start --prefix server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
