@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 require('dotenv').config();
 
-const MONGO_URL = process.env.MONGO_URL;
+const MONGO_URL = "mongodb://localhost:27017/FSD-mini-project";
 
 mongoose.connection.once('open', () => {
   console.log('MongoDB connection has been opened.');
